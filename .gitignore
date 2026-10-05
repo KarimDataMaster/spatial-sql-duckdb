@@ -1,6 +1,7 @@
 # Course site and local environment
 .venv/
 site/
+video/
 .ipynb_checkpoints/
 data/raw/*
 !data/raw/.gitkeep
