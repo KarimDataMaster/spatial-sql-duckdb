@@ -1,0 +1,71 @@
+site_name: Spatial SQL с DuckDB
+site_description: Практический курс по пространственному SQL и алгоритмам в DuckDB
+site_url: https://karimdatamaster.github.io/spatial-sql-duckdb/
+repo_url: https://github.com/KarimDataMaster/spatial-sql-duckdb
+repo_name: KarimDataMaster/spatial-sql-duckdb
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+nav:
+  - Главная: index.md
+  - Начало работы: getting-started.md
+  - Настройка на Windows: setup/windows-jupyter.md
+  - Карта курса: course-map.md
+  - Модули:
+      - 0. Введение: modules/00-introduction.md
+      - 1. Геометрии и форматы: modules/01-geometries.md
+      - 2. Системы координат: modules/02-crs.md
+      - 3. Пространственные запросы: modules/03-spatial-queries.md
+      - 4. Анализ и агрегирование: modules/04-analysis.md
+      - 5. Производительность: modules/05-performance.md
+      - 6. Итоговый проект: modules/06-capstone.md
+  - Практические работы: labs/index.md
+  - Участие в проекте: contributing.md

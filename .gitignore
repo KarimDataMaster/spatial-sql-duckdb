@@ -1,3 +1,14 @@
+# Course site and local environment
+.venv/
+site/
+.ipynb_checkpoints/
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*.duckdb
+data/processed/*.duckdb.wal
+data/processed/*.db
+data/processed/*.db.wal
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

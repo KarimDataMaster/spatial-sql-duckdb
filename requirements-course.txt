@@ -1,0 +1,6 @@
+duckdb>=1.5,<1.6
+ipykernel>=6,<8
+matplotlib>=3.8,<4
+notebook>=7,<8
+pandas>=2,<4
+pyarrow>=18,<24
